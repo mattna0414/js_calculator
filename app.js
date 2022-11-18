@@ -1,23 +1,29 @@
 const calculator = {
-  add: function(a,b) {
-    console.log(a+b);
+  add: function (a, b) {
+    return a + b;
   },
-  minus: function(a,b) {
-    console.log(a-b);
+  minus: function (a, b) {
+    return a - b;
   },
-  div: function(a,b) {
-    console.log(a/b);
+  div: function (a, b) {
+    return a / b;
   },
-  multi: function(a,b) {
-    console.log(a*b);
+  multi: function (a, b) {
+    return a * b;
   },
-  power:function(a,b) {
-    console.log(a**b);
-  }
+  power: function (a, b) {
+    return a ** b;
+  },//function을 return값으로 반환(console사용안함)
 };
 
-calculator.add(2,5);
-calculator.minus(99,3);
-calculator.div(25,5);
-calculator.multi(22,5);
-calculator.power(2,5);
+const plusResult = calculator.add(2, 5);
+const minusResult = calculator.minus(99, 3);
+const divResult = calculator.div(25, 5);
+const multiResult = calculator.multi(22, 5);
+const powerResult = calculator.power(2, 5);
+
+console.log(plusResult);
+console.log(minusResult);
+console.log(divResult);
+console.log(multiResult);
+console.log(powerResult);
