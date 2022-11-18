@@ -17,13 +17,8 @@ const calculator = {
 };
 
 const plusResult = calculator.add(2, 5);
-const minusResult = calculator.minus(99, 3);
-const divResult = calculator.div(25, 5);
-const multiResult = calculator.multi(22, 5);
-const powerResult = calculator.power(2, 5);
-
-console.log(plusResult);
-console.log(minusResult);
-console.log(divResult);
-console.log(multiResult);
-console.log(powerResult);
+const minusResult = calculator.minus(plusResult, 3);
+const divResult = calculator.div(minusResult, 5);
+const multiResult = calculator.multi(divResult, plusResult);
+const powerResult = calculator.power(multiResult, minusResult);
+//console 창에서는 아무일도 안일어나지만 결과함수를 불러오면 값이 나옴
